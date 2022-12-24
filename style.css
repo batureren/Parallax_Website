@@ -11,8 +11,8 @@ html, body{
 }
 
 .first-image{
-    background-image: url(./images/bg.png);
-    min-height: 100%;
+  background-image: url(./images/bg.png);
+  min-height: 100%;
 }
 
 .second-image{
@@ -52,7 +52,7 @@ article{
 }
 
 .text-grey{
-  color: #666;
+  color: rgb(109, 108, 108);
 }
 
 .text-black{
