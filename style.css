@@ -160,11 +160,16 @@ h2{
 button{
   background-color: transparent;
   border: none;
+  cursor: pointer;
+}
+
+button:hover{
+  cursor: pointer;
 }
 
   button img:last-child {
     display: none;  
-    
+
   }
 
   button:active img:last-child {
@@ -180,4 +185,5 @@ button{
 
   button:hover img:first-child {
     display: none;  
+
   }
