@@ -154,21 +154,27 @@ h2{
     position: fixed;
     bottom: 15px;
     right: 15px;
-    background-color: transparent;
+    
   }
+
+button{
+  background-color: transparent;
+  border: none;
+}
 
   button img:last-child {
     display: none;  
+    
   }
 
   button:active img:last-child {
     display: block;  
-    padding-bottom: 4px;
+
   }
 
   button:hover img:last-child {
     display: block;  
-    padding-bottom: 4px;
+
   }
 
 
