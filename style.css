@@ -7,32 +7,31 @@
 
 html, body{
     height: 100%;
-    min-width: 790px;
 }
 
 .first-image{
-  background-image: url(./images/bg.png);
+  background-image: url(./images/ms1.png);
   min-height: 100%;
 }
 
 .second-image{
-  background-image: url(./images/bg2.png);
+  background-image: url(./images/ms2.jpg);
   min-height: 80%;
 }
 
 .third-image{
-  background-image: url(./images/bg3.png);
+  background-image: url(./images/ms3.jpg);
   min-height: 80%;
 }
 
 .forth-image{
-  background-image: url(./images/bg4.png);
+  background-image: url(./images/ms4.jpg);
   min-height: 80%;
 }
 
 .fifth-image{
-  background-image: url(./images/bg1.png);
-  min-height: 80%;
+  background-image: url(./images/ms5.jpg);
+  min-height: 100%;
 }
 
 .first-image, .second-image, .third-image, .forth-image, .fifth-image{
@@ -62,82 +61,113 @@ article{
 
 h2{
   margin-bottom: 20px;
+  font-size: 30px;
 }
 
 .top_header{
     position: relative;
     text-align: center;
-    background-color: #4D4D4D;
+    background-color: #f93d3dc2;
     color: white;
     padding: 30px;
-    width: 430px;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 35px 0px;
     font-size: 50px;
     letter-spacing: 6px;
+    outline-offset: 16px;
+    outline: 8px inset rgb(255, 0, 0);
+    transform: scale(1);
+    transition: 0.5s;
 }
 
-#bottom{
-  width: 800px;
+.top_header:hover{
+  transform: scale(1.2);
+  transition: 0.5s;
+  background-color: #f93d3ddc;
+  cursor: pointer;
+  
 }
 
-.top_header::after{
-        content: '';
-        display: block;
-        position: absolute;
-        top: -25px;
-        bottom: -25px;
-        left: -25px;
-        right: -25px;
-        border-radius: 55px 0px;
-        border: 8px solid;
-        border-left-color: #6c4d6c;
-        border-top-color: #6c4d6c;
-        border-right-color: #a64da6;
-        border-bottom-color: #a64da6;
-      }
+#maplelogo:hover{
+ 
+}
+
 
       .third_header{
         position: relative;
         text-align: center;
-        background-color: #4D4D4D;
+        background-color: #0000009c;
         color: white;
-        width: 750px;
+        width: 600px;
         padding: 10px;
         margin-left: auto;
         margin-right: auto;
         border-radius: 10px 0px;
         font-size: 50px;
         letter-spacing: 6px;
+        outline-offset: 10px;
+        outline: 5px inset rgb(255, 0, 0);
+        transform: scale(1);
+        transition: 0.5s;
+    }
+
+    .third_header:hover{
+      transform: scale(1.2);
+      transition: 0.5s;
+      background-color: rgb(0, 0, 0);
+      cursor: pointer;
     }
 
     .forth_header{
       position: relative;
       text-align: center;
-      background-color: #4D4D4D;
+      background-color: #15097cac;
       color: white;
-      width: 490px;
       padding: 10px;
       margin-left: auto;
       margin-right: auto;
       border-radius: 10px 0px;
       font-size: 50px;
       letter-spacing: 6px;
+      outline-offset: 10px;
+      outline: 5px inset rgb(255, 0, 0);
+      transform: scale(1);
+      transition: 0.5s;
   }
 
-    .third_header::after, .forth_header::after{
-      content: '';
-      display: block;
-      position: absolute;
-      top: -10px;
-      bottom: -10px;
-      left: -10px;
-      right: -10px;
-      border-radius: 15px 0px;
-      border: 6px solid;
-      border-left-color: #6c4d6c;
-      border-top-color: #6c4d6c;
-      border-right-color: #a64da6;
-      border-bottom-color: #a64da6;
-    }
+.forth_header:hover{
+  background-color: #15097c;
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+  #bottom{
+    width: 800px;
+    background-color: #282e34f0;
+  }
+
+  #bottom:hover{
+    background-color: #282e34;
+    color: red;
+    transition: 1s;
+  }
+
+  section{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  a img:last-child {
+    display: none;  
+  }
+  a:hover img:last-child {
+    display: block;  
+    padding-bottom: 4px;
+  }
+  a:hover img:first-child {
+    display: none;  
+  }
